@@ -1,0 +1,38 @@
+COZY WEIHNACHTSMARKT-TRIPPLANER – SELBST BEHOBENE BUGS
+Datenstand: 27.10.2026
+
+1. Timeline-Datumsfehler
+   Behoben: Datumswerte werden mittags erzeugt, damit Sommerzeit- und UTC-Verschiebungen keinen Tag verlieren.
+
+2. Geschlossene Sondertage
+   Behoben: Essen-Steele berücksichtigt den 01.11. und 22.11. als geschlossen.
+
+3. Mehr als fünf Lichtsterne
+   Behoben: Duisburg-Nord zeigt den sechsten Punkt als Sonderstern, ohne das Kartenlayout zu beschädigen.
+
+4. Personen umbenennen und entfernen
+   Behoben: Leere Namen erhalten automatisch einen Ersatznamen; mindestens eine Person bleibt bestehen.
+
+5. Unsichere Texteingaben
+   Behoben: Namen, Notizen, Markt- und Haltestellentexte werden vor HTML-Ausgabe maskiert.
+
+6. Offline-/API-Konflikt
+   Behoben: DB-API-Aufrufe werden nicht vom Service Worker zwischengespeichert. Die App bleibt offline nutzbar, die Haltestellensuche meldet verständlich, wenn kein Internet besteht.
+
+7. GitHub-Pages-Unterordner
+   Behoben: Alle App-, Manifest- und Service-Worker-Pfade sind relativ und funktionieren auch in einem Repository-Unterordner.
+
+8. ICS-Sonderzeichen
+   Behoben: Kommas, Semikolons, Backslashes und Zeilenumbrüche werden im Kalenderformat korrekt escaped.
+
+9. Mobiles Teilen
+   Behoben: Wenn Web Share mit Dateien nicht verfügbar ist, lädt die App die .ics-Datei automatisch herunter.
+
+10. Verfügbarkeitsfilter
+    Behoben: „Nur gemeinsame Tage“ verlangt ein Ja von allen aktuell angelegten Personen.
+
+11. Lokale Datensicherung
+    Behoben: Export und Import unterstützen Personen, Timeline, Favoriten, Trips und Zielhaltestelle gemeinsam.
+
+12. Leere Such- und Ergebniszustände
+    Behoben: Markt- und Haltestellensuche zeigen verständliche Rückmeldungen statt leerer Flächen.
