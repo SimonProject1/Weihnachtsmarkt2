@@ -1,0 +1,18 @@
+COZY WEIHNACHTSMARKT-TRIPPLANER V2.0.0 – SELBST BEHOBENE BUGS
+Datenstand: 28.10.2026
+
+1. Installationsbutton mobil versehentlich sichtbar/unsichtbar: hidden-Regel und mobile Darstellung korrigiert.
+2. Gleiche Personennamen überschrieben Verfügbarkeiten: stabile, eindeutige Personen-IDs eingeführt.
+3. Datumsverschiebung durch UTC/Sommerzeit: alle Markttage werden lokal und mittags verarbeitet.
+4. Wochentage falsch zugeordnet: native Sonntag-bis-Samstag-Logik vereinheitlicht; Mülheim montags korrekt geschlossen.
+5. Sonder-Schließtage fehlten: u. a. Remscheid, Bochum, Dortmund, Duisburg und Hagen korrigiert.
+6. Widersprüchliche Neuss-/Ratingen-Termine: mit aktuellen Veranstalterseiten abgeglichen und berichtigt.
+7. Trip-Sortierung veränderte die globale Marktreihenfolge: Sortierung arbeitet jetzt auf Kopien.
+8. Geschlossener Markt oder ungültige Uhrzeit konnte gespeichert werden: Datum und Start-/Endzeit werden validiert.
+9. Detail-Button „Trip planen“ scheiterte bei ausgefilterter Karte: direkte Übergabe an die Tripmaske eingebaut.
+10. Ungültige gespeicherte Filter konnten alle Treffer verstecken: Filterwerte werden geprüft und zurückgesetzt.
+11. Unsichere/zu große Sicherungsimporte: Formatprüfung, Größenlimit und bereinigte Datenübernahme ergänzt.
+12. Offline-Navigation und DB-API kollidierten: Navigation-Fallback verbessert, transport.rest bleibt bewusst netzwerkbasiert.
+13. ICS-Zeitzone und Sonderzeichen: Europe/Berlin, Escaping und Zeilenfaltung ergänzt.
+14. Lange Timeline wurde unübersichtlich: Marktanzahl plus kompakte Vorschau statt ungebremster Badge-Liste.
+15. Fehlerhafte Marktanzahl oder doppelte IDs: automatische Tests auf 39 Märkte, 30 neue Ziele und eindeutige IDs ergänzt.
